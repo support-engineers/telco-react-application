@@ -28,6 +28,7 @@ const routes = [
       </ProtectedRoute>
     ),
     children: [
+      { path: '/', element: <Navigate to='/test' /> },
       // { path: '/', element: <Navigate to='/<your default view>' /> },
       { path: ROUTE_PATHS.TEST, element: <Test /> },
       // [hygen] Add routes
