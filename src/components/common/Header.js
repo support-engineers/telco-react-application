@@ -204,15 +204,15 @@ function NavigationMenu({ column: vertical }) {
         orientation={vertical ? 'vertical' : 'horizontal'}
         variant={vertical ? 'fullWidth' : 'standard'}
       >
-        <Tab label='Home' value='' component={NavLink} to={ROUTE_PATHS.DEFAULT} />
+        <Tab label='Home' value='test' component={NavLink} to={ROUTE_PATHS.TEST} />
         {/* [hygen] Import links */}
-        <Tab
+        {/* <Tab
           label='Test'
           value='test'
           component={NavLink}
           to={ROUTE_PATHS.TEST}
           className={classes.navLink}
-        />
+        /> */}
       </Tabs>
     </Grid>
   );
