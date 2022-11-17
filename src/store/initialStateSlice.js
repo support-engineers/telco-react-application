@@ -3,9 +3,9 @@ import { API_VERSIONS } from '@deck.gl/carto';
 
 export const initialState = {
   viewState: {
-    latitude: 31.802892,
-    longitude: -103.007813,
-    zoom: 2,
+    latitude: 42.279042852502485,
+    longitude: -74.31252686854945,
+    zoom: 6,
     pitch: 0,
     bearing: 0,
     dragRotate: false,
@@ -14,24 +14,8 @@ export const initialState = {
   credentials: {
     apiVersion: API_VERSIONS.V3,
     apiBaseUrl: 'https://gcp-us-east1.api.carto.com',
+    accessToken: 'eyJhbGciOiJIUzI1NiJ9.eyJhIjoiYWNfa2hpdnRreGkiLCJqdGkiOiIyNmZkMzNiNSJ9.OoXufaTjPXrifu6gvP2NBAWh0_TBsa5jFRRAG_au2YA'
   },
   googleApiKey: '', // only required when using a Google Basemap
   googleMapId: '', // only required when using a Google Custom Basemap
-  oauth: {
-    domain: 'auth.carto.com',
-    clientId: 'vLCe8PGAUfTKB7TB5csRSAvKwQ1w4NQR', // type here your application clientId
-    organizationId: '', // organizationId is required for SSO
-    scopes: [
-      'read:current_user',
-      'update:current_user',
-      'read:connections',
-      'write:connections',
-      'read:maps',
-      'write:maps',
-      'read:account',
-      'admin:account',
-    ],
-    audience: 'carto-cloud-native-api',
-    authorizeEndPoint: 'https://carto.com/oauth2/authorize', // only valid if keeping https://localhost:3000/oauthCallback
-  },
 };
